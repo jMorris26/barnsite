@@ -1,0 +1,127 @@
+<div id="home">
+
+  <h1>rachel's barn name</h1>
+
+  <a href="#about">
+    <div class="container">
+      <div class="box-outline">
+        <div class="box-calltoaction">
+          <h2> e n t e r </h2>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+
+
+<div id="about">
+
+  <h1 id="abouttitle">at rachel's barn name...</h1>
+  <!-- <div class="brownline"></div> -->
+
+  <div class="white">
+    <p>
+      ...we not only offer a quality boarding facility with access to 40 acres of irrigated pasture and a massive grass arena; we offer a tranquil environment with a friendly, supportive, and passionate community of equestrians of all different ages and disciplines.
+    </p><br /><br />
+    <p>
+      At Rachel's Barn Name, you'll find high quality care for your equine partner. We know if the horses are happy, you are happy!
+    </p><br /><br />
+    <p>
+      Located just five minutes east of I-25 and only 15 minutes from CSU, access is easy.
+      If you are interested in lessons, leasing, or horses for sale, please <a href="#contact">contact</a> us!
+    </p><br /><br />
+    <p style="text-align:center;">
+      <strong>(970) 690–1478</strong><br />
+    </p>
+  </div>
+
+  <!-- <div class="brownline"></div> -->
+
+</div>
+
+<div id="gallery">
+  <h1 id="gallerytitle">gallery</h1>
+  <div class="white galleryimgs">
+
+    <div class="galleryimg">
+      <a href="images/gallery/fields.jpg"><img class="desaturate" src="images/gallery/fields.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/guinness.jpg"><img class="desaturate" src="images/gallery/guinness.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/IMG_1883.png"><img class="desaturate" src="images/gallery/IMG_1883.png" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/IMG_2224.png"><img class="desaturate" src="images/gallery/IMG_2224.png" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/IMG_2225.png"><img class="desaturate" src="images/gallery/IMG_2225.png" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/kita.jpg"><img class="desaturate" src="images/gallery/kita.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/mavs.png"><img class="desaturate" src="images/gallery/mavs.png" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/xc.jpg"><img class="desaturate" src="images/gallery/xc.jpg" /></a>
+    </div>
+
+    <div class="galleryimg">
+      <a href="images/gallery/group.jpg"><img class="desaturate" src="images/gallery/group.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/two.jpg"><img class="desaturate" src="images/gallery/two.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/twohorses.jpg"><img class="desaturate" src="images/gallery/twohorses.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/field.jpg"><img class="desaturate" src="images/gallery/field.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/bounce.jpg"><img class="desaturate" src="images/gallery/bounce.jpg" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/mavs2.png"><img class="desaturate" src="images/gallery/mavs2.png" /></a>
+    </div>
+    <div class="galleryimg">
+      <a href="images/gallery/mavs3.png"><img class="desaturate" src="images/gallery/mavs3.png" /></a>
+    </div>
+  </div>
+</div>
+
+<div id="contact" ng-controller="submitController as sc">
+  <h1 id="contacttitle">we want to hear from you</h1>
+
+
+
+  <form name="contactus" method="POST">
+
+    <div class="red">
+      <p>{{sc.message}}</p>
+    </div>
+    <input type="text" placeholder="Name *" name="clientname" ng-model="sc.form.clientname" required/>
+    <br />
+
+    <div class="red">
+      <p>{{sc.message}}</p>
+    </div>
+    <input type="email" placeholder="Email *" name="email" ng-model="sc.form.email" required/>
+    <br />
+    <input type="text" placeholder="Phone (xxx) xxx - xxxx" name="pnum" ng-model="sc.form.pnum"/><br />
+
+    <div class="red">
+      <p>{{sc.message}}</p>
+    </div>
+    <textarea placeholder="Please type your message here!" name="message" ng-model="sc.form.message" required></textarea>
+
+    <input type="submit" class="submit" name="Submit" ng-click="sc.submitClick()"/>
+
+  </form>
+  <br /><br /><br /><br />
+      <p class="copyright">© 2017 JAM Creations</p>
+</div>

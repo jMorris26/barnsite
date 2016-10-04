@@ -1,0 +1,245 @@
+
+body {
+  background-image: url('images/landscapejump.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(207, 215, 221);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  /*overflow: hidden;*/
+  /*height: 100vh;*/
+  bottom:0;
+  width: 100vw;
+  z-index: 10;
+}
+
+#home, #about, #gallery, #contact {
+  height: 100vh;
+}
+
+#abouttitle {
+  padding-top: 1.5em;
+}
+
+.brownline {
+  border-top: 2px solid rgb(52, 56, 59);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+p {
+  font-family: Quicksand, sans-serif;
+  color: rgb(52, 56, 59);
+  font-size: 3em;
+}
+
+.white {
+  margin-top: 5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgb(52, 56, 59);
+  margin-left: 3em;
+  padding: 2em;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.red p {
+  color: rgb(150, 17, 45);
+  font-style: oblique;
+}
+
+.box-outline {
+  border: 3px solid rgba(52, 56, 59, 1);
+}
+
+.box-calltoaction {
+  background-color: rgba(52, 56, 59, 0.7);
+  color: rgb(255, 255, 255);
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  padding-left: 4em;
+  padding-right: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 10em;
+  font-family: Quicksand;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: EB Garamond, serif;
+  text-align: center;
+  padding-top: 6em;
+}
+
+.container {
+  margin-top: 8em;
+}
+
+#gallerytitle {
+  padding-top: 2em;
+}
+
+.galleryimgs {
+  text-align: justify;
+}
+
+.galleryimg {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.galleryimg img {
+  width: 17em;
+  height: 14em;
+}
+
+.galleryimgs:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.desaturate {
+  filter: grayscale(100%);
+}
+
+.footer {
+  min-width: 100vw;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  left:0;
+  right: 0;
+  bottom:0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.glyphicon {
+  color: rgba(52, 56, 59, 0.7);
+  text-align: center;
+  font-size: 5em;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#contacttitle {
+  padding-top: 3.5em;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8em;
+}
+
+input {
+  width: 100%;
+  font-size: 3em;
+  margin-bottom: 2em;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-family: Quicksand, sans-serif;
+}
+
+textarea {
+  width: 100%;
+  font-size: 3em;
+  padding-left: 0.5em;
+  font-family: Quicksand, sans-serif;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.submit {
+  background-color: rgba(52, 56, 59, 1);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 2em;
+  border: none;
+  padding: 0.5em;
+  font-size: 3.5em;
+  font-family: Quicksand, sans-serif;
+}
+
+.submissionmessage {
+  width: 80%;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.copyright {
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.return {
+  background-color: rgb(52, 56, 59);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand, sans-serif;
+  font-size: 4em;
+  border: none;
+  padding: 0.5em;
+}
+
+/*.glyphicon-comment {
+  padding-right: 1em;
+}
+
+.glyphicon-camera {
+  padding-left: 1em;
+}*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~ landscape ~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 700px) and (orientation: landscape) {
+
+    .footer {
+      height: 15vh;
+    }
+
+    .glyphicon {
+      font-size: 3em;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 2em;
+    }
+
+    h2 {
+      font-size: 6em;
+    }
+
+    .container {
+      margin-top: 4em;
+    }
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~ mobile portrait ~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen
+  and (min-device-width: 320px)
+  /*and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)*/
+  and (orientation: portrait) {
+
+        body {
+          background-image: url('images/portraitjump.jpg');
+          height: 100vh;
+        }
+
+}

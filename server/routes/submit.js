@@ -14,9 +14,9 @@ router.post('/', function(req, res){
   		'username' : 'morris.jess26@gmail.com',
   		'api_key': process.env.ELASTICEMAIL_KEY,
   		'from': 'morris.jess26@gmail.com', //rachel's email?
-  		'from_name' : 'Rachels Barn Name',
-  		'to' : 'morris.jess26@gmail.com', //rachel's email
-  		'subject' : 'New Message for RachelsBarnName!',
+  		'from_name' : 'Sunrise Equine',
+  		'to' : 'morris.jess26@gmail.com', //rachel's email rhowardl@aol.com
+  		'subject' : 'New Message for Sunrise Equine!',
       'reply_to' : req.body.email,
       'reply_to_name' : req.body.clientname,
       'merge_firstname' : req.body.clientname,

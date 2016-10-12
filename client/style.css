@@ -6,8 +6,6 @@ body {
   background-color: rgb(207, 215, 221);
   background-blend-mode: overlay;
   background-attachment: fixed;
-  /*overflow: hidden;*/
-  /*height: 100vh;*/
   bottom:0;
   width: 100vw;
   z-index: 10;
@@ -15,6 +13,10 @@ body {
 
 #home, #about, #gallery, #contact {
   height: 100vh;
+}
+
+#linktoenter {
+  color: rgb(255, 255, 255)
 }
 
 #abouttitle {
@@ -26,6 +28,10 @@ body {
   width: 70%;
   margin: 0 auto;
   margin-top: 2em;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 p {
@@ -159,6 +165,7 @@ textarea {
   font-family: Quicksand, sans-serif;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  border: none;
 }
 
 .submit {
@@ -193,14 +200,6 @@ textarea {
   padding: 0.5em;
 }
 
-/*.glyphicon-comment {
-  padding-right: 1em;
-}
-
-.glyphicon-camera {
-  padding-left: 1em;
-}*/
-
 /*~~~~~~~~~~~~~~~~~~~~~~ landscape ~~~~~~~~~~~~~~~~~~~~~~*/
 
 @media (min-width: 700px) and (orientation: landscape) {
@@ -226,6 +225,21 @@ textarea {
       margin-top: 4em;
     }
 
+    #home {
+      margin-top: -17em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    #about {
+      height: 60em;
+    }
+
+    #gallery {
+      height: 100em;
+    }
 }
 
 
@@ -242,4 +256,60 @@ textarea {
           height: 100vh;
         }
 
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ desktop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width:1025px){
+
+  #home {
+    margin-top: 5em;
+  }
+
+  #home h2 {
+    font-size: 4em;
+    padding-top: 0.25em;
+  }
+
+  .container {
+    padding-right: 15em;
+    padding-left: 15em;
+  }
+
+  .footer {
+    height: 85px;
+  }
+
+  .white {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+
+  form {
+    width: 50%;
+    padding-top: 4em;
+  }
+
+  input, textarea {
+    font-size: 2em;
+  }
+
+  .submit {
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+
+  .submit:hover {
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgba(52, 56, 59, 0.7);
+  }
+
+  .box-calltoaction:hover {
+    background-color: rgb(52, 56, 59);
+  }
+
+  .glyphicon:hover {
+    color: rgb(52, 56, 59);
+  }
 }

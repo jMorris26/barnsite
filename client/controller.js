@@ -11,10 +11,10 @@ app.controller('submitController', ['$http', '$location', function($http, $locat
       vm.message = "Required!";
     } else {
       console.log(vm.form);
-      $http.post('http://localhost:3000/', vm.form)
+      $http.post('http://sunrise-equine.surge.sh/', vm.form)
         .then(function(response) {
           console.log(response);
-          $location.url('http://localhost:8080/#/submit');
+          $location.url('http://sunrise-equine.surge.sh/#/submit');
         })
         .catch(function(err){
           console.log(err);

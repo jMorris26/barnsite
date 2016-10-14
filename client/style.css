@@ -204,6 +204,18 @@ textarea {
 
 @media (min-width: 700px) and (orientation: landscape) {
 
+  html {
+    background-image: url('images/landscapejump.jpg');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
+
     .footer {
       height: 15vh;
     }
@@ -251,11 +263,18 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 2)*/
   and (orientation: portrait) {
 
-        body {
-          background-image: url('images/portraitjump.jpg');
-          height: 100vh;
-        }
+    html {
+      background-image: url('images/portraitjump.jpg');
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+      float: right;
+    }
 
+    body {
+      height: 100%;
+      overflow: scroll;
+    }
 }
 
 

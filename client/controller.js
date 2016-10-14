@@ -11,7 +11,7 @@ app.controller('submitController', ['$http', '$location', function($http, $locat
       vm.message = "Required!";
     } else {
       console.log(vm.form);
-      $http.post('https://sunrise-equine.herokuapp.com/', vm.form)
+      $http.post('https://sunrise-equine.herokuapp.com/' + place, vm.form)
         .then(function(response) {
           console.log(response);
           $location.url(place);

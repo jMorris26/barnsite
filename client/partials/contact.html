@@ -1,0 +1,29 @@
+<h1 id="contacttitle">we want to hear from you</h1>
+
+
+
+<form name="contactus" method="POST">
+
+  <div class="red">
+    <p>{{sc.message}}</p>
+  </div>
+  <input type="text" placeholder="Name *" name="clientname" ng-model="sc.form.clientname" required/>
+  <br />
+
+  <div class="red">
+    <p>{{sc.message}}</p>
+  </div>
+  <input type="email" placeholder="Email *" name="email" ng-model="sc.form.email" required/>
+  <br />
+  <input type="text" placeholder="Phone (xxx) xxx - xxxx" name="pnum" ng-model="sc.form.pnum"/><br />
+
+  <div class="red">
+    <p>{{sc.message}}</p>
+  </div>
+  <textarea placeholder="Please type your message here!" name="message" ng-model="sc.form.message" required></textarea>
+
+  <input type="submit" class="submit" name="Submit" ng-click="sc.submitClick('/submit')"/>
+
+</form>
+<br /><br /><br /><br />
+    <p class="copyright">© 2017 JAM Creations</p>

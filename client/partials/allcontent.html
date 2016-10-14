@@ -1,36 +1,10 @@
 <div id="home">
-
   <h1>sunrise equine</h1>
-
     <enter></enter>
-
 </div>
 
-
-
 <div id="about">
-
-  <h1 id="abouttitle">at sunrise equine...</h1>
-  <!-- <div class="brownline"></div> -->
-
-  <div class="white">
-    <p>
-      ...we not only offer a quality boarding facility with access to 40 acres of irrigated pasture and a massive grass arena; we offer a tranquil environment with a friendly, supportive, and passionate community of equestrians of all different ages and disciplines.
-    </p><br /><br />
-    <p>
-      At Sunrise Equine, you'll find high quality care for your equine partner. We know if the horses are happy, you are happy!
-    </p><br /><br />
-    <p>
-      Located just five minutes east of I-25 and only 15 minutes from CSU, access is easy.
-      If you are interested in lessons, leasing, or horses for sale, please <a href="#contact">contact</a> us!
-    </p><br /><br />
-    <p style="text-align:center;">
-      <strong>(970) 690–1478</strong><br />
-    </p>
-  </div>
-
-  <!-- <div class="brownline"></div> -->
-
+  <about></about>
 </div>
 
 <div id="gallery">
@@ -38,34 +12,5 @@
 </div>
 
 <div id="contact" ng-controller="submitController as sc">
-<!-- <div id="contact"> -->
-  <h1 id="contacttitle">we want to hear from you</h1>
-
-
-
-  <form name="contactus" method="POST">
-
-    <div class="red">
-      <p>{{sc.message}}</p>
-    </div>
-    <input type="text" placeholder="Name *" name="clientname" ng-model="sc.form.clientname" required/>
-    <br />
-
-    <div class="red">
-      <p>{{sc.message}}</p>
-    </div>
-    <input type="email" placeholder="Email *" name="email" ng-model="sc.form.email" required/>
-    <br />
-    <input type="text" placeholder="Phone (xxx) xxx - xxxx" name="pnum" ng-model="sc.form.pnum"/><br />
-
-    <div class="red">
-      <p>{{sc.message}}</p>
-    </div>
-    <textarea placeholder="Please type your message here!" name="message" ng-model="sc.form.message" required></textarea>
-
-    <input type="submit" class="submit" name="Submit" ng-click="sc.submitClick('/submit')"/>
-
-  </form>
-  <br /><br /><br /><br />
-      <p class="copyright">© 2017 JAM Creations</p>
+  <contact></contact>
 </div>

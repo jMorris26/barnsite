@@ -27,6 +27,18 @@ app.controller('submitController', ['$http', '$location', function($http, $locat
 
 }]);
 
+app.directive('about', [function(){
+  return {
+    templateUrl: 'partials/about.html'
+  };
+}]);
+
+app.directive('contact', [function(){
+  return {
+    templateUrl: 'partials/contact'
+  };
+}]);
+
 
 app.directive('gallery', [function(){
   return {
@@ -58,6 +70,7 @@ app.directive('enter', [function(){
     templateUrl: 'partials/enter.html',
     link: function(){
       $('a[href^="#"]').on('click',function (e) {
+        console.log('is it firing?');
     			e.preventDefault();
 
     			var target = this.hash;
@@ -69,6 +82,26 @@ app.directive('enter', [function(){
     					window.location.hash = target;
     			});
     	});
+    }
+  };
+}]);
+
+app.directive('footer', [function(){
+  return {
+    templateUrl: 'partials/footer.html',
+    link: function(){
+      $('a[href^="#"]').on('click',function (e) {
+      			e.preventDefault();
+
+      			var target = this.hash;
+      			var $target = $(target);
+
+      			$('html, body').stop().animate({
+      					'scrollTop': $target.offset().top
+      			}, 900, 'swing', function () {
+      					window.location.hash = target;
+      			});
+      	});
     }
   };
 }]);

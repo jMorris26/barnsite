@@ -6,15 +6,15 @@ app.controller('submitController', ['$http', '$location', function($http, $locat
   var vm = this;
   vm.form = {};
   vm.message = '';
-  vm.submitClick = function(place){
+  vm.submitClick = function(path){
     if(!(vm.form.clientname) || !(vm.form.email) || !(vm.form.message)){
       vm.message = "Required!";
     } else {
       console.log(vm.form);
-      $http.post('https://sunrise-equine.herokuapp.com/' + place, vm.form)
+      $http.post('https://sunrise-equine.herokuapp.com' + path, vm.form)
         .then(function(response) {
           console.log(response);
-          $location.url(place);
+          $location.url(path);
         })
         .catch(function(err){
           console.log(err);

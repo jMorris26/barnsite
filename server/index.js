@@ -15,7 +15,7 @@ var port = process.env.PORT || 3000;
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/', submit);
+app.use('/submit', submit);
 
 app.listen(port, function(){
   console.log('Server running on ' + port);

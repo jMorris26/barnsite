@@ -6,6 +6,7 @@ var querystring = require('querystring');
 var https = require('https');
 
 router.post('/', function(req, res){
+  console.log('entered post function*******************');
   function sendElasticEmail() {
   	// Make sure to add your username and api_key below.
 

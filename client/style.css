@@ -264,7 +264,7 @@ textarea {
   and (orientation: portrait) {
 
     html {
-      background-image: url('images/portraitjumpcopy.jpg');
+      /*background-image: url('images/portraitjumpcopy.jpg');*/
       background-size: cover;
       height: 100%;
       overflow: hidden;
@@ -272,6 +272,7 @@ textarea {
     }
 
     body {
+      background-image: url('images/portraitjumpcopy.jpg');
       height: 100%;
       overflow: scroll;
     }

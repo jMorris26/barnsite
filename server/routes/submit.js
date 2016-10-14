@@ -48,6 +48,7 @@ router.post('/', function(req, res){
   		response.setEncoding('utf8');
   		response.on('data', function (chunk) {
         console.log('chunk', chunk);
+        console.log('response: ', response);
   			result = chunk;
   		});
   		response.on('error', function (e) {

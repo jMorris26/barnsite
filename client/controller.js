@@ -11,10 +11,12 @@ app.controller('submitController', ['$http', '$location', function($http, $locat
       vm.message = "Required!";
     } else {
       console.log(vm.form);
+      console.log('path', path);
+      console.log('https://sunrise-equine.herokuapp.com' + path);
       $http.post('https://sunrise-equine.herokuapp.com' + path, vm.form)
         .then(function(response) {
           console.log(response);
-          $location.url(path);
+          $location.url('/submit');
         })
         .catch(function(err){
           console.log(err);

@@ -20,7 +20,7 @@ body {
 }
 
 #abouttitle {
-  padding-top: 1.5em;
+  padding-top: 2em;
 }
 
 .brownline {
@@ -47,7 +47,7 @@ p {
   margin-left: 3em;
   padding: 2em;
   margin-right: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 }
 
 .red p {
@@ -103,8 +103,8 @@ h1 {
 }
 
 .galleryimg img {
-  width: 17em;
-  height: 14em;
+  width: 11em;
+  height: 9em;
 }
 
 .galleryimgs:after {
@@ -139,7 +139,7 @@ h1 {
 }
 
 #contacttitle {
-  padding-top: 3.5em;
+  padding-top: 2em;
 }
 
 form {
@@ -275,6 +275,11 @@ textarea {
       background-image: url('images/portraitjumpcopy.jpg');
       height: 100%;
       overflow: scroll;
+    }
+
+    .galleryimg img {
+      width: 17em;
+      height: 14em;
     }
 }
 
